@@ -1,3 +1,6 @@
+// Worse - O(n^2)
+// Avg - O(nlogn)
+
 let arrOfNum = [6, 8, 7, 80, 11, 66, 33, 9, 10];
 
 function quickSort(arr) {
