@@ -9,4 +9,4 @@ function towerOfHanoi(n, source, auxiliary, target) {
   towerOfHanoi(n - 1, auxiliary, source, target);
 }
 
-towerOfHanoi(3, 'A', 'B', 'C');
+towerOfHanoi(3, 'B', 'D', 'C');
