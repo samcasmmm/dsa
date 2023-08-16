@@ -3,6 +3,7 @@
 // map
 let nums = [2, 6, 8, 74, 22];
 
+console.log('Map PolyFill');
 Array.prototype.myMap = function (cb) {
   let temp = [];
   for (let i = 0; i < this.length; i++) {
@@ -16,3 +17,29 @@ let mulbythree = nums.myMap((num) => {
 });
 
 console.log(mulbythree);
+
+// filter
+console.log('Filter PolyFill');
+
+Array.prototype.myFilter = function (cb) {
+  let temp = [];
+  for (let i = 0; i < this.length; i++) {
+    if (cb(this[i], i, this)) temp.push(this[i]);
+  }
+  return temp;
+};
+
+console.log(
+  nums.myFilter((num) => {
+    return num > 2;
+  })
+);
+
+console.log('Filter Reduce');
+
+Array.prototype.myFilter = function (cb, initial) {
+  var accumulator = initial || 0;
+  for (let i = 0; i < this.length; i++) {
+    const element = array[i];
+  }
+};
