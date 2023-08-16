@@ -37,9 +37,16 @@ console.log(
 
 console.log('Filter Reduce');
 
-Array.prototype.myFilter = function (cb, initial) {
-  var accumulator = initial || 0;
+Array.prototype.myReduce = function (cb, initial) {
+  var accumulator = initial;
   for (let i = 0; i < this.length; i++) {
-    const element = array[i];
+    accumulator = accumulator ? cb(accumulator, this[i], i, this) : this[i];
   }
+  return accumulator;
 };
+
+console.log(
+  nums.myReduce((acc, curr, i, arr) => {
+    return acc > curr;
+  })
+);
