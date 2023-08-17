@@ -40,7 +40,7 @@ console.log('Filter Reduce');
 Array.prototype.myReduce = function (cb, initial) {
   var accumulator = initial;
   for (let i = 0; i < this.length; i++) {
-    accumulator = accumulator ? cb(accumulator, this[i], i, this) : this[i];
+    accum = accum ? cb(accumulator, this[i], i, this) : this[i];
   }
   return accumulator;
 };
