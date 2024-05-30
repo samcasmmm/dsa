@@ -1,7 +1,6 @@
 const Fibonacci = (num) => {
   let arr = [0, 1];
   let f = 0;
-  let total = 0;
   for (let i = 2; i < num; i++) {
     if (num === 0 || num === 1) {
       return num;
@@ -10,7 +9,7 @@ const Fibonacci = (num) => {
       arr.push(f);
     }
   }
-  return total, arr;
+  return arr;
 };
 console.log(Fibonacci(7));
 
@@ -21,4 +20,4 @@ const fib2 = (n) => {
   }
   return f;
 };
-console.log(fib2(8));
+// console.log(fib2(8));
