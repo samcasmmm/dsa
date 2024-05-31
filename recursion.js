@@ -8,7 +8,7 @@ function recursivelyFibonacci(n) {
 }
 // console.log(recursivelyFibonacci(1));
 // console.log(recursivelyFibonacci(2));
-console.log('Fibonacci of :', recursivelyFibonacci(10));
+console.log("Fibonacci of :", recursivelyFibonacci(5));
 
 // recursive Factorial
 
@@ -19,4 +19,4 @@ function recursivelyFactorial(n) {
   return n * recursivelyFactorial(n - 1);
 }
 
-console.log('Factorial of :', recursivelyFactorial(10));
+console.log("Factorial of :", recursivelyFactorial(4));
